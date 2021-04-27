@@ -1,11 +1,11 @@
 package com.example.krealll;
 
-import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Test;
 
+import static org.testng.Assert.*;
 
-class CustomClassTest {
+public class CustomClassTest {
 
     private CustomClass customClass;
     private  int one;
@@ -13,7 +13,7 @@ class CustomClassTest {
     private  int five;
     private int four;
 
-    @BeforeEach
+    @BeforeClass
     void setUp() {
         customClass = new CustomClass();
         one=1;
@@ -23,22 +23,23 @@ class CustomClassTest {
     }
 
     @Test
-    void isMoreThanThreePositive() {
-        Assertions.assertTrue(customClass.isMoreThanThree(five));
+    void isMoreThanThreePositiveTest() {
+        assertTrue(customClass.isMoreThanThree(five));
     }
 
     @Test
-    void isMoreThanThreePositiveTwo() {
-        Assertions.assertTrue(customClass.isMoreThanThree(four));
+    void isMoreThanThreePositiveTwoTest() {
+        assertTrue(customClass.isMoreThanThree(four));
     }
 
     @Test
-    void isMoreThanThreeNegative() {
-        Assertions.assertFalse(customClass.isMoreThanThree(one));
+    void isMoreThanThreeNegativeTest() {
+        assertFalse(customClass.isMoreThanThree(one));
     }
 
     @Test
-    void isMoreThanThreeNegativeTwo() {
-        Assertions.assertFalse(customClass.isMoreThanThree(two));
+    void isMoreThanThreeNegativeTwoTest() {
+        assertFalse(customClass.isMoreThanThree(two));
     }
+
 }
