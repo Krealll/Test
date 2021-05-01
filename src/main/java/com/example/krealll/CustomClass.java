@@ -9,6 +9,7 @@ public class CustomClass {
         //Usefull content
         //Usefull content
         //Usefull content
+        //Usefull content
 
     }
 
