@@ -12,6 +12,7 @@ public class CustomClassTest {
     private  int two;
     private  int five;
     private int four;
+    private int six;
 
     @BeforeClass
     void setUp() {
@@ -19,6 +20,7 @@ public class CustomClassTest {
         one=1;
         two=2;
         five=5;
+        six=6;
         four=4;
     }
 
@@ -30,6 +32,11 @@ public class CustomClassTest {
     @Test
     void isMoreThanThreePositiveTwoTest() {
         assertTrue(customClass.isMoreThanThree(four));
+    }
+
+    @Test
+    void isMoreThanThreePositiveThreeTest() {
+        assertTrue(customClass.isMoreThanThree(six));
     }
 
     @Test
