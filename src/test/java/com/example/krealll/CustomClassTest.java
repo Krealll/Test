@@ -14,4 +14,16 @@ public class CustomClassTest {
         assertTrue(palindromeTester.isPalindrome(""));
     }
 
+    @Test
+    public void whenPalString_thenAccept() {
+        CustomClass palindromeTester = new CustomClass();
+        assertTrue(palindromeTester.isPalindrome("catac"));
+    }
+
+    @Test
+    public void whenPalString_thenDecline() {
+        CustomClass palindromeTester = new CustomClass();
+        assertFalse(palindromeTester.isPalindrome("cat"));
+    }
+
 }
