@@ -6,6 +6,7 @@ public class CustomClass {
         return n>3;
         //Usefull content
         //Usefull content
+        //Usefull content
     }
 
 
