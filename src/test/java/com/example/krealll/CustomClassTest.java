@@ -15,6 +15,10 @@ public class CustomClassTest {
     }
 
 
-
+    @Test
+    public void whenPalString_thenDecline() {
+        CustomClass palindromeTester = new CustomClass();
+        assertFalse(palindromeTester.isPalindrome("cat"));
+    }
 
 }
