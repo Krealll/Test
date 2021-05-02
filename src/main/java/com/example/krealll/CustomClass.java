@@ -19,14 +19,5 @@ public class CustomClass {
         }
     }
 
-    public  boolean testStr(String str){
-        if(str.length()!=0){
-            return  str.charAt(0)=='1';
-        } else {
-            return  str.charAt(1)=='1';
-        }
-    }
-
-    //Test
 
 }
