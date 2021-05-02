@@ -1,5 +1,7 @@
 package com.example.krealll;
 
+import java.util.Arrays;
+
 public class CustomClass {
 
     public boolean isPalindrome(String inputString) {
@@ -18,6 +20,12 @@ public class CustomClass {
                 return false;
         }
     }
+
+    public static void main(String[] args) {
+        System.out.println("Params:");
+        System.out.println(Arrays.toString(args));
+    }
+
 //Test
 //Test
 //Test
