@@ -46,7 +46,7 @@
                 <configuration>
                     <archive>
                         <manifest>
-                            <mainClass>com.epam.mjc.AppRunner</mainClass>
+                            <mainClass>com.example.krealll.CustomClass</mainClass>
                         </manifest>
                     </archive>
                 </configuration>
